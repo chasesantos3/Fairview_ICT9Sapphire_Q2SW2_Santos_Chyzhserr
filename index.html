@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robotics Club Registration Form</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      background: url('https://i.pinimg.com/originals/9c/e0/c8/9ce0c80bfb6790e39d34a2e4adbb4ea2.gif') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: #ffffff;
+    }
+    .form-container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    }
+    .form-title {
+      text-align: center;
+      color: #0a2e66;
+      margin-bottom: 20px;
+    }
+    .form-label {
+      color: #ffffff; 
+    }
+    .btn-submit {
+      background-color: #0a2e66;
+      color: #ffffff;
+      border: none;
+    }
+    .btn-submit:hover {
+      background-color: #09325a;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h1 class="form-title">Robotics Club Registration Form</h1>
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="age" class="form-label">Age</label>
+          <input type="number" class="form-control" id="age" placeholder="Enter your age">
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="text" class="form-control" id="phone" placeholder="Enter your phone number">
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Preferred Robotics Topics</label><br>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="programming" value="Programming">
+          <label class="form-check-label" for="programming">Programming</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="electronics" value="Electronics">
+          <label class="form-check-label" for="electronics">Electronics</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="mechanical" value="Mechanical Design">
+          <label class="form-check-label" for="mechanical">Mechanical Design</label>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Robotics Experience Level</label><br>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="experience" id="beginner" value="Beginner">
+          <label class="form-check-label" for="beginner">Beginner</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="experience" id="intermediate" value="Intermediate">
+          <label class="form-check-label" for="intermediate">Intermediate</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="experience" id="advanced" value="Advanced">
+          <label class="form-check-label" for="advanced">Advanced</label>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="project" class="form-label">Preferred Robotics Project</label>
+        <select class="form-select" id="project">
+          <option selected>Choose a project...</option>
+          <option value="Project1">Smart Robot For Face Recognition</option>
+          <option value="Project2">HMI-Based Robotic Arm</option>
+          <option value="Project3">Fire-Extinguishing Robot</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="interest" class="form-label">Statement of Interest</label>
+        <textarea class="form-control" id="interest" rows="3" placeholder="Why do you want to join?"></textarea>
+      </div>
+      <button type="submit" class="btn btn-submit w-100">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
